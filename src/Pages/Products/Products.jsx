@@ -9,20 +9,22 @@ import ProductItem from "../../Components/Products/ProductItem";
 const Products = () => {
     const dispatch = useDispatch();
 
-    const { data: products, loading } = useSelector((state) => state.products);
+    // const { data, loading } = useSelector((state) => state);
+    // console.log("data", data);
+
     // let { counter } = useSelector((state) => state.counter)
 
-    useEffect(() => {
-        dispatch(fetchAllProducts())
-    }, [dispatch]);
+    // useEffect(() => {
+    //     dispatch(fetchAllProducts())
+    // }, [dispatch]);
 
-    if (loading) {
-        return <SpinnerLoading />;
-    }
+    // if (loading) {
+    //     return <SpinnerLoading />;
+    // }
 
-    if (!products.data || products.data.length === 0) {
-        return <NotFoundProduct />;
-    }
+    // if (!products.data || products.data.length === 0) {
+    //     return <NotFoundProduct />;
+    // }
 
     return (
         <div className="products container mt-30">
@@ -32,13 +34,13 @@ const Products = () => {
             <Button onClick={() => dispatch(increaseByAmount(5))}>increaseByAmount</Button> */}
 
             <h5>Products: </h5>
-            <div className="row row-cols-1 row-cols-md-4 g-4">
-                {products.data.map((product) => (
+            {/* <div className="row row-cols-1 row-cols-md-4 g-4">
+                {products?.data?.map((product) => (
                     <div className="col" key={product.id}>
                         <ProductItem product={product} />
                     </div>
                 ))}
-            </div>
+            </div> */}
         </div>
     );
 };
