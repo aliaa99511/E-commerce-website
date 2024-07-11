@@ -1,38 +1,229 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+
+:root {
+  --bgColor: #0aad0a;
+  --lightBgColor: #f0f3f2;
+  --shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+  --fontFamily: "Encode Sans Expanded", sans-serif;
+  --ratingColor: #ffc908;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: var(--fontFamily);
+  background: #ededed !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pointer {
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.text-main {
+  color: var(--bgColor);
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+.bg-main {
+  background-color: var(--bgColor) !important;
+}
+
+.bg-main-light {
+  background-color: var(--lightBgColor) !important;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-25 {
+  margin-bottom: 24px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.row>* {
+  padding-right: 6px !important;
+  padding-left: 6px !important;
+}
+
+a,
+a:hover {
+  color: black;
+  text-decoration: none !important;
+}
+
+.h5,
+h5 {
+  font-size: 18px !important;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 15px !important;
+}
+
+.layer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* background-color: rgb(145 145 145 / 50%); */
+  background-color: rgb(102 102 102 / 50%);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 4000;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.layer.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
-@keyframes App-logo-spin {
-  from {
+.btn-loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid black;
+  border-left: 4px solid black;
+  border-bottom: 4px solid black;
+  width: 35px;
+  height: 35px;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+
+  100% {
     transform: rotate(360deg);
   }
+}
+
+.offline {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #f1f1f1;
+  padding: 4px 15px;
+  z-index: 100000;
+}
+
+
+.btn {
+  padding: 5px !important;
+  margin-top: 10px !important;
+  font-size: 16px !important;
+}
+
+.login .btn {
+  padding: 7px 15px !important;
+}
+
+.btn-lg {
+  width: 100% !important;
+}
+
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3em;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.img-fluid {
+  height: 600px !important;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.productDetails img {
+  height: 500px !important;
+  margin-top: 44px;
+}
+
+.mainSlider {
+  margin-bottom: 20px;
+}
+
+.mainSlider .row>* {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }

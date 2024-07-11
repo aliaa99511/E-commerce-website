@@ -1,0 +1,40 @@
+.cart .card {
+    margin-top: 34px !important;
+    background: whitesmoke;
+}
+
+.cart .img-thumbnail {
+    width: 100px;
+    height: 100px;
+
+}
+
+.cart .cartItem {
+    padding: 20px;
+}
+
+.cart hr {
+    margin: 0 !important;
+}
+
+.cart .count {
+    margin-top: 10px;
+}
+
+.cart h5 {
+    margin-bottom: 5px !important;
+}
+
+.cart p {
+    margin-bottom: 0px;
+}
+
+.cart .btn {
+    padding: 4px 11px !important;
+}
+
+.emptyCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

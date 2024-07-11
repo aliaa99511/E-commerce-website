@@ -1,0 +1,85 @@
+// Footer.scss
+.footer {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+
+    .app-link {
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .email-input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px 0 0 4px;
+                width: 300px;
+            }
+
+            .share-button {
+                padding: 10px 20px;
+                font-size: 16px;
+                border: none;
+                background-color: #28a745;
+                color: white;
+                cursor: pointer;
+                border-radius: 0 4px 4px 0;
+
+                &:hover {
+                    background-color: #218838;
+                }
+            }
+        }
+    }
+
+    .payment-partners {
+        margin-bottom: 20px;
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .partners {
+            display: flex;
+            justify-content: center;
+
+            img {
+                margin: 0 10px;
+                width: 50px;
+                height: auto;
+            }
+        }
+    }
+
+    .app-download {
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .download-links {
+            display: flex;
+            justify-content: center;
+
+            img {
+                margin: 0 10px;
+                width: 150px;
+                height: auto;
+            }
+        }
+    }
+}

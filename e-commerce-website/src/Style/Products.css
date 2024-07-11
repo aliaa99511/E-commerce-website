@@ -1,0 +1,27 @@
+.products {}
+
+.products .card {
+    height: 410px;
+}
+
+.products .card-body {
+    padding: 10px 10px 0px 10px !important;
+}
+
+.productDetails {
+    /* margin-top: -37px;
+    margin-left: -101px;
+    margin-right: -101px; */
+}
+
+.productDetails p {
+    margin-bottom: 5px !important;
+}
+
+.productDetails .h5 {
+    margin-bottom: 6px !important;
+}
+
+.productDetails .card {
+    --bs-card-border-width: 0 !important;
+}
