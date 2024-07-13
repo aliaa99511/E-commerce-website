@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.18edc478.css",
+    "main.js": "/static/js/main.10f3e099.js",
+    "static/js/453.ddf972df.chunk.js": "/static/js/453.ddf972df.chunk.js",
+    "static/media/slider-image-1.jpeg": "/static/media/slider-image-1.3c3940ee0f1c3b17ff9a.jpeg",
+    "static/media/grocery-banner.png": "/static/media/grocery-banner.2c56649c9cbe2e19b86f.png",
+    "static/media/slider-image-3.jpeg": "/static/media/slider-image-3.7e5c9f7a513f6db6dd5e.jpeg",
+    "static/media/slider-image-2.jpeg": "/static/media/slider-image-2.e510b0de8a4d96a1d5ad.jpeg",
+    "static/media/grocery-banner-2.jpeg": "/static/media/grocery-banner-2.7a4a78a90acc3d5847cb.jpeg",
+    "static/media/404.png": "/static/media/404.3bdd2ccc03bf549ee50c.png",
+    "static/media/empty-cart.png": "/static/media/empty-cart.a77e8cf4ce223affb98a.png",
+    "static/media/freshcart-logo.svg": "/static/media/freshcart-logo.af33f2cb2a100f447f3b8c388932e12a.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.18edc478.css.map": "/static/css/main.18edc478.css.map",
+    "main.10f3e099.js.map": "/static/js/main.10f3e099.js.map",
+    "453.ddf972df.chunk.js.map": "/static/js/453.ddf972df.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18edc478.css",
+    "static/js/main.10f3e099.js"
+  ]
+}
