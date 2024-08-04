@@ -106,7 +106,18 @@ export default function GlobalContextProvider(props) {
 
 
     return (
-        <GlobalContext.Provider value={{ getAllProducts, getProductDetails, addProductToCart, numOfCartItems, setNumOfCartItems, GetLoggedUserCart, UpdateCartProductQuantity, RemoveCartItem, getAllCategoriesSlider }}>
+        <GlobalContext.Provider
+            value={{
+                getAllProducts,
+                getProductDetails,
+                addProductToCart,
+                numOfCartItems,
+                setNumOfCartItems,
+                GetLoggedUserCart,
+                UpdateCartProductQuantity,
+                RemoveCartItem,
+                getAllCategoriesSlider
+            }}>
             {props.children}
         </GlobalContext.Provider>
     );
